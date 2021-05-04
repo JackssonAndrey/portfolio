@@ -1,0 +1,197 @@
+.pageMain {
+  width: 100vw;
+}
+
+.pageHeader {
+  height: 60px;
+  width: 100vw;
+  padding: 10px;
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.imgLogoMenu {
+  flex: 1;
+}
+
+.imgLogoMenu img {
+  flex: 1;
+  width: 170px;
+}
+
+
+.listMenu {
+  list-style: none;
+}
+
+.listMenu li {
+  display: inline;
+  text-decoration: none;
+  margin: 15px;
+  color: #FFF;
+  font-size: 24px;
+}
+
+.listMenu li a {
+  text-decoration: none;
+  color: #FFF;
+
+  transition: color 0.2s;
+}
+
+.listMenu li a:hover {
+  color: rgb(76, 174, 253);
+}
+
+.apresentation {
+  display: flex;
+  justify-content: space-around;
+  height: 700px;
+  width: 100vw;
+  padding: 30px;
+}
+
+.textLeft {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.textLeft h1 {
+  font-size: 30pt;
+  color: #3871FF;
+}
+
+.textLeft p {
+  color: #FFF;
+  font-size: large;
+}
+
+.listSocial {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.listSocial li {
+  display: inline;
+  text-decoration: none;
+  margin-right: 20px;
+  color: #3871FF;
+
+  transition: color 0.3s;
+}
+
+.listSocial li:hover {
+  color: #0e52ff;
+}
+
+.listSocial li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logoRight {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoRight img {
+  flex: 1;
+  width: 350px;
+}
+
+.imgArrowADown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.imgArrowADown img {
+  width: 50px;
+}
+
+.myProjects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  width: 80%;
+  margin: auto;
+  color: #FFF;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 3%;
+  padding: 3%;
+}
+
+.cardProject {
+  width: 250px;
+  height: 320px;
+  background: #FFF;
+  padding: 0 10px 10px 10px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  margin: 10px;
+}
+
+.cardImg {
+  flex: 1;
+  width: inherit;
+  height: 150px;
+}
+
+.cardImg img {
+  width: inherit;
+  height: inherit;
+  border-radius: 4px 4px 0 0;
+}
+
+.cardProject p {
+  color: #252525;
+  font-size: 10pt;
+}
+
+.cardFooter {
+  margin-top: 15px;
+  padding: 15px 20px;
+}
+
+.btnViewCode {
+  padding: 5px 10px;
+  border-radius: 4px;
+  outline: none;
+  color: #3871FF;
+  border: 1px #3871FF solid;
+  background: #FFF;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+}
+
+.btnViewCode:hover {
+  background: #3871FF;
+  color: #FFF;
+}
