@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiInstagram, FiLinkedin, FiMail, FiFacebook, FiGithub } from 'react-icons/fi';
+import { FiInstagram, FiLinkedin, FiMail, FiFacebook, FiGithub, FiChevronUp, FiLink } from 'react-icons/fi';
 
 import styles from '../../styles/home.module.css';
 
@@ -84,85 +84,214 @@ const Home: React.FC = () => {
 
         <article className={styles.projects}>
           <div className={styles.cardProject}>
-            <span className={styles.cardImg}>
-              <img src="./print-github.png" alt="Imagem Projeto" />
-            </span>
+            <h3>Título do projeto</h3>
 
             <p>
               Aplicação para busca de perfis e repositórios do GitHub. Com frontend em React, consumindo API do GitHub.
             </p>
 
+            <article className={styles.projectsTags}>
+              <span><em>#javascript</em></span>
+              <span><em>#react</em></span>
+              <span><em>#vercel</em></span>
+            </article>
+
             <span className={styles.cardFooter}>
               <a href="#">
-                <button type="button" className={styles.btnViewCode}>Código</button>
+                <button type="button" className={styles.btnViewCode}><FiLink size={18} style={{ marginRight: '5px' }} /> Código</button>
               </a>
             </span>
           </div>
 
           <div className={styles.cardProject}>
-            <span className={styles.cardImg}>
-              <img src="./print-github.png" alt="Imagem Projeto" />
-            </span>
+            <h3>Título do projeto</h3>
 
             <p>
               Aplicação para busca de perfis e repositórios do GitHub. Com frontend em React, consumindo API do GitHub.
             </p>
 
+            <article className={styles.projectsTags}>
+              <span><em>#javascript</em></span>
+              <span><em>#react</em></span>
+              <span><em>#vercel</em></span>
+            </article>
+
             <span className={styles.cardFooter}>
               <a href="#">
-                <button type="button" className={styles.btnViewCode}>Código</button>
+                <button type="button" className={styles.btnViewCode}><FiLink size={18} style={{ marginRight: '5px' }} /> Código</button>
               </a>
             </span>
           </div>
 
           <div className={styles.cardProject}>
-            <span className={styles.cardImg}>
-              <img src="./print-github.png" alt="Imagem Projeto" />
-            </span>
+            <h3>Título do projeto</h3>
 
             <p>
               Aplicação para busca de perfis e repositórios do GitHub. Com frontend em React, consumindo API do GitHub.
             </p>
 
+            <article className={styles.projectsTags}>
+              <span><em>#javascript</em></span>
+              <span><em>#react</em></span>
+              <span><em>#vercel</em></span>
+            </article>
+
             <span className={styles.cardFooter}>
               <a href="#">
-                <button type="button" className={styles.btnViewCode}>Código</button>
+                <button type="button" className={styles.btnViewCode}><FiLink size={18} style={{ marginRight: '5px' }} /> Código</button>
               </a>
             </span>
           </div>
 
           <div className={styles.cardProject}>
-            <span className={styles.cardImg}>
-              <img src="./print-github.png" alt="Imagem Projeto" />
-            </span>
+            <h3>Título do projeto</h3>
 
             <p>
               Aplicação para busca de perfis e repositórios do GitHub. Com frontend em React, consumindo API do GitHub.
             </p>
 
+            <article className={styles.projectsTags}>
+              <span><em>#javascript</em></span>
+              <span><em>#react</em></span>
+              <span><em>#vercel</em></span>
+            </article>
+
             <span className={styles.cardFooter}>
               <a href="#">
-                <button type="button" className={styles.btnViewCode}>Código</button>
+                <button type="button" className={styles.btnViewCode}><FiLink size={18} style={{ marginRight: '5px' }} /> Código</button>
               </a>
             </span>
           </div>
 
           <div className={styles.cardProject}>
-            <span className={styles.cardImg}>
-              <img src="./print-github.png" alt="Imagem Projeto" />
-            </span>
+            <h3>Título do projeto</h3>
 
             <p>
               Aplicação para busca de perfis e repositórios do GitHub. Com frontend em React, consumindo API do GitHub.
             </p>
 
+            <article className={styles.projectsTags}>
+              <span><em>#javascript</em></span>
+              <span><em>#react</em></span>
+              <span><em>#vercel</em></span>
+            </article>
+
             <span className={styles.cardFooter}>
               <a href="#">
-                <button type="button" className={styles.btnViewCode}>Código</button>
+                <button type="button" className={styles.btnViewCode}><FiLink size={18} style={{ marginRight: '5px' }} /> Código</button>
               </a>
             </span>
           </div>
         </article>
+      </div>
+
+      <div className={styles.aboutMe}>
+        <h1>Quem sou?</h1>
+
+        <div className={styles.aboutMeContent}>
+          <article>
+            Fala dev, sou Andrey Araújo, atualmente sou desenvolvedor Full Stack. Programo em PHP, Lavavel, Javascript, Nodejs,
+            React, React Native, mas confesso que minha stack favorita é Nodejs, React e React Native. Sou formado em Análise e
+            Desenvolvimento de Sistemas. Tive o primeiro contato com programação ainda no ensino médio. Desde então sempre procuro
+            desenvolver pequenos e médios sistemas, para estar em constante aprendizado. Os erros do dia a dia nos fazem crescer e
+            amadurecer como desenvolvedores e profissionais.
+
+            Atualmente trabalho como freelancer no desenvolvimento web, desde sites simples até sistemas mais complexos. Caso
+            queira saber mais a respeito, minhas redes socias estão mais em baixo para entrar em contato comigo.
+          </article>
+          <article>
+            <img src="./perfil.png" alt="Andrey Araújo" />
+          </article>
+        </div>
+      </div>
+
+      <div className={styles.techs}>
+        <div className={styles.techsContent}>
+          <article>
+            <h1>Tecnologias que trabalho</h1>
+            <p>Essas são algumas das tecnologias que trabalho.</p>
+          </article>
+          <article>
+            <span>
+              <FiInstagram size={40} />
+            </span>
+            <span>
+              <FiInstagram size={40} />
+            </span>
+            <span>
+              <FiInstagram size={40} />
+            </span>
+            <span>
+              <FiInstagram size={40} />
+            </span>
+            <span>
+              <FiInstagram size={40} />
+            </span>
+            <span>
+              <FiInstagram size={40} />
+            </span>
+
+            <span>
+              <FiInstagram size={40} />
+            </span>
+            <span>
+              <FiInstagram size={40} />
+            </span>
+            <span>
+              <FiInstagram size={40} />
+            </span>
+            <span>
+              <FiInstagram size={40} />
+            </span>
+            <span>
+              <FiInstagram size={40} />
+            </span>
+            <span>
+              <FiInstagram size={40} />
+            </span>
+          </article>
+        </div>
+      </div>
+
+      <div className={styles.footer}>
+        <div className={styles.footerContent}>
+          <article>
+            <ul className={styles.listSocial}>
+              <li>
+                <a href="#">
+                  <FiFacebook size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <FiGithub size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <FiInstagram size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <FiLinkedin size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <FiMail size={24} />
+                </a>
+              </li>
+            </ul>
+          </article>
+          <img src="./logo-maior.svg" alt="Andrey Araujo" />
+          <p>Desenvolvido e criado por Andrey Araújo - {new Date().getFullYear()}</p>
+          <p>andreyaraujo.dev</p>
+        </div>
+
+        <span className={styles.returnTop}>
+          <FiChevronUp size={24} />
+        </span>
       </div>
     </div>
   )
