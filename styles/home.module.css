@@ -305,14 +305,13 @@
 }
 
 .techs article:nth-child(2) span {
-  padding: 40px;
+  padding: 30px;
   margin: 5px;
 
   border-radius: 8px;
 
   background-color: #3871FF;
   color: #FFF;
-  border-bottom: 4px solid #3871FF;
 
   transition: opacity .3s;
 }
@@ -320,7 +319,13 @@
 .techs article:nth-child(2) span:hover {
   opacity: 0.8;
   cursor: pointer;
-  border-bottom-color: #212b3a;
+}
+
+.iconTech {
+  width: 60px;
+  height: 60px;
+
+  color: #FFF;
 }
 
 .footer {
@@ -351,7 +356,7 @@
 
   float: right;
 
-  background: #252525;
+  background: #212b3a;
   color: #FFF;
 
   transition: opacity .3s;

@@ -213,41 +213,56 @@ const Home: React.FC = () => {
           </article>
           <article>
             <span>
-              <FiInstagram size={40} />
+              <img src="./images/logo-aws.svg" alt="Image tech" className={styles.iconTech} />
             </span>
             <span>
-              <FiInstagram size={40} />
+              <img src="./images/logo-css.svg" alt="Image tech" className={styles.iconTech} />
             </span>
             <span>
-              <FiInstagram size={40} />
+              <img src="./images/logo-bootstrap.svg" alt="Image tech" className={styles.iconTech} />
             </span>
             <span>
-              <FiInstagram size={40} />
+              <img src="./images/logo-django.svg" alt="Image tech" className={styles.iconTech} />
             </span>
             <span>
-              <FiInstagram size={40} />
+              <img src="./images/logo-github.svg" alt="Image tech" className={styles.iconTech} />
             </span>
             <span>
-              <FiInstagram size={40} />
+              <img src="./images/logo-heroku.svg" alt="Image tech" className={styles.iconTech} />
             </span>
 
             <span>
-              <FiInstagram size={40} />
+              <img src="./images/logo-html.svg" alt="Image tech" className={styles.iconTech} />
             </span>
             <span>
-              <FiInstagram size={40} />
+              <img src="./images/logo-jquery.svg" alt="Image tech" className={styles.iconTech} />
             </span>
             <span>
-              <FiInstagram size={40} />
+              <img src="./images/logo-js.svg" alt="Image tech" className={styles.iconTech} />
             </span>
             <span>
-              <FiInstagram size={40} />
+              <img src="./images/logo-laravel.svg" alt="Image tech" className={styles.iconTech} />
             </span>
             <span>
-              <FiInstagram size={40} />
+              <img src="./images/logo-materialui.svg" alt="Image tech" className={styles.iconTech} />
             </span>
             <span>
-              <FiInstagram size={40} />
+              <img src="./images/logo-mysql.svg" alt="Image tech" className={styles.iconTech} />
+            </span>
+            <span>
+              <img src="./images/logo-nodejs.svg" alt="Image tech" className={styles.iconTech} />
+            </span>
+            <span>
+              <img src="./images/logo-php.svg" alt="Image tech" className={styles.iconTech} />
+            </span>
+            <span>
+              <img src="./images/logo-python.svg" alt="Image tech" className={styles.iconTech} />
+            </span>
+            <span>
+              <img src="./images/logo-react.svg" alt="Image tech" className={styles.iconTech} />
+            </span>
+            <span>
+              <img src="./images/logo-ts.svg" alt="Image tech" className={styles.iconTech} />
             </span>
           </article>
         </div>
