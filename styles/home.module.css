@@ -367,3 +367,99 @@
   opacity: 0.8;
   cursor: pointer;
 }
+
+@media (max-width: 414px) {
+  .pageHeader {
+    display: none;
+  }
+
+  .apresentation {
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: 600px;
+  }
+
+  .apresentation h1:nth-child(2) {
+    font-size: 18pt;
+    color: #FFF;
+  }
+
+  .textLeft {
+    align-items: center;
+  }
+
+  .textLeft p {
+    display: none;
+  }
+
+  .logoRight {
+    align-items: center;
+  }
+
+  .logoRight img {
+    width: 230px;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  .aboutMe {
+    padding: 20px;
+  }
+
+  .aboutMe h1 {
+    margin-bottom: 0;
+  }
+
+  .aboutMeContent {
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  .aboutMeContent {
+    height: auto;
+    align-items: center;
+    width: 100%;
+  }
+
+  .aboutMeContent article:nth-child(2) {
+    height: auto;
+    align-items: center;
+  }
+
+  .aboutMeContent article:nth-child(2) img {
+    display: block;
+    width: 230px;
+    height: 300px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .aboutMeContent article:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 20px;
+    font-size: 15pt;
+  }
+
+  .techsContent {
+    flex-direction: column;
+  }
+
+  .techsContent article:nth-child(0) {
+    width: 100%;
+  }
+
+  .techsContent article:nth-child(1) {
+    margin-bottom: 20px;
+
+    width: 100%;
+  }
+
+  .iconTech {
+    width: 40px;
+    height: 40px;
+  }
+}

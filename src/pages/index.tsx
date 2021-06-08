@@ -84,7 +84,7 @@ const Home: React.FC = () => {
 
       <div className={styles.myProjects} id="projects">
         <h1>Meus Projetos</h1>
-        <h3>Abaixo estão alguns do projetos pessoais e profissionais que ja realizei.</h3>
+        <h3 className={styles.subtitle}>Abaixo estão alguns do projetos pessoais e profissionais que ja realizei.</h3>
 
         <article className={styles.projects}>
           <div className={styles.cardProject}>
