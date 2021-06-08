@@ -234,14 +234,12 @@ const Home: React.FC = () => {
 
         <div className={styles.aboutMeContent}>
           <article>
-            Fala dev, sou Andrey Araújo, atualmente sou desenvolvedor Full Stack. Programo em PHP, Lavavel, Javascript, Nodejs,
-            React, React Native, mas confesso que minha stack favorita é Nodejs, React e React Native. Sou formado em Análise e
+            Fala dev, sou Andrey Araújo, atualmente sou desenvolvedor Full Stack na FortBrasil. Programo em PHP, Lavavel, Python,
+            Django, Javascript, Nodejs,
+            React, mas confesso que minha stack favorita é Nodejs, React e React Native. Sou formado em Análise e
             Desenvolvimento de Sistemas. Tive o primeiro contato com programação ainda no ensino médio. Desde então sempre procuro
             desenvolver pequenos e médios sistemas, para estar em constante aprendizado. Os erros do dia a dia nos fazem crescer e
             amadurecer como desenvolvedores e profissionais.
-
-            Atualmente trabalho como freelancer no desenvolvimento web, desde sites simples até sistemas mais complexos. Caso
-            queira saber mais a respeito, minhas redes socias estão mais em baixo para entrar em contato comigo.
           </article>
           <article>
             <img src="./perfil.png" alt="Andrey Araújo" />
