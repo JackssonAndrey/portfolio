@@ -21,3 +21,7 @@ body {
 h1 {
   font-family: 'Varela', sans-serif;
 }
+
+a {
+  text-decoration: none;
+}

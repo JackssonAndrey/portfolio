@@ -4,6 +4,10 @@ import { FiInstagram, FiLinkedin, FiMail, FiFacebook, FiGithub, FiChevronUp, FiL
 import styles from '../../styles/home.module.css';
 
 const Home: React.FC = () => {
+  function returnToTop() {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <div className={styles.pageMain}>
       <header className={styles.pageHeader}>
@@ -16,16 +20,16 @@ const Home: React.FC = () => {
 
           <ul className={styles.listMenu}>
             <li>
-              <a href="#">Home</a>
+              <a href="#" onClick={returnToTop}>Home</a>
             </li>
             <li>
-              <a href="#">Sobre</a>
+              <a href="#aboutMe">Sobre</a>
             </li>
             <li>
-              <a href="#">Projetos</a>
+              <a href="#projects">Projetos</a>
             </li>
             <li>
-              <a href="#">Contatos</a>
+              <a href="#techs">Tecnologias</a>
             </li>
           </ul>
         </nav>
@@ -42,27 +46,27 @@ const Home: React.FC = () => {
 
           <ul className={styles.listSocial}>
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/andreyaraujo.dev" target="_blank">
                 <FiFacebook size={32} />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://github.com/JackssonAndrey" target="_blank">
                 <FiGithub size={32} />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/andreyaraujo.dev/" target="_blank">
                 <FiInstagram size={32} />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/jacksson-andrey/" target="_blank">
                 <FiLinkedin size={32} />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="mailto:jaab.andrey@gmail.com" target="_blank">
                 <FiMail size={32} />
               </a>
             </li>
@@ -78,93 +82,103 @@ const Home: React.FC = () => {
         <img src="./arrow-down.svg" alt="Arrow Down" />
       </div>
 
-      <div className={styles.myProjects}>
+      <div className={styles.myProjects} id="projects">
         <h1>Meus Projetos</h1>
         <h3>Abaixo estão alguns do projetos pessoais e profissionais que ja realizei.</h3>
 
         <article className={styles.projects}>
           <div className={styles.cardProject}>
-            <h3>Título do projeto</h3>
+            <h3>Ecoleta - Marketplace de coleta de resíduos</h3>
 
             <p>
-              Aplicação para busca de perfis e repositórios do GitHub. Com frontend em React, consumindo API do GitHub.
+              Aplicação desenvolvida na Next Level Week, da Rocketseat.
+              Trata-se de uma plicação onde as pessoas podem localizar pontos de coleta de resíduos para reciclagem,
+              na sua cidade, ou de onde estiver.
             </p>
 
             <article className={styles.projectsTags}>
-              <span><em>#javascript</em></span>
+              <span><em>#typescript</em></span>
               <span><em>#react</em></span>
-              <span><em>#vercel</em></span>
+              <span><em>#node</em></span>
+              <span><em>#reactNative</em></span>
             </article>
 
             <span className={styles.cardFooter}>
-              <a href="#">
+              <a href="https://github.com/JackssonAndrey/next-level-week" target="_blank">
                 <button type="button" className={styles.btnViewCode}><FiLink size={18} style={{ marginRight: '5px' }} /> Código</button>
               </a>
             </span>
           </div>
 
           <div className={styles.cardProject}>
-            <h3>Título do projeto</h3>
+            <h3>Gerenciamento de estabelecimentos</h3>
 
             <p>
-              Aplicação para busca de perfis e repositórios do GitHub. Com frontend em React, consumindo API do GitHub.
+              Sistema feito para resolução de case para vaga de desenvolvedor full stack na FortBrasil. trata-se de um gerenciador
+              estabelecimentos.
             </p>
 
             <article className={styles.projectsTags}>
-              <span><em>#javascript</em></span>
               <span><em>#react</em></span>
-              <span><em>#vercel</em></span>
+              <span><em>#node</em></span>
+              <span><em>#typescript</em></span>
+              <span><em>#javascript</em></span>
+              <span><em>#postgres</em></span>
+              <span><em>#docker</em></span>
+              <span><em>#chakraui</em></span>
             </article>
 
             <span className={styles.cardFooter}>
-              <a href="#">
+              <a href="https://github.com/JackssonAndrey/case-fortbrasil-frontend" target="_blank">
                 <button type="button" className={styles.btnViewCode}><FiLink size={18} style={{ marginRight: '5px' }} /> Código</button>
               </a>
             </span>
           </div>
 
           <div className={styles.cardProject}>
-            <h3>Título do projeto</h3>
+            <h3>Move.it</h3>
 
             <p>
-              Aplicação para busca de perfis e repositórios do GitHub. Com frontend em React, consumindo API do GitHub.
+              Aplicação feita na trilha de React, na Next Level Week, da Rocketseat.
+              Semelhante a técnica Pomodoro, o Move.it gerencia o tempo de suas atividades, bonificando suas conquistas.
             </p>
 
             <article className={styles.projectsTags}>
-              <span><em>#javascript</em></span>
+              <span><em>#typescript</em></span>
               <span><em>#react</em></span>
+              <span><em>#nextjs</em></span>
               <span><em>#vercel</em></span>
             </article>
 
             <span className={styles.cardFooter}>
-              <a href="#">
+              <a href="https://github.com/JackssonAndrey/moveit-nlw04" target="_blank">
                 <button type="button" className={styles.btnViewCode}><FiLink size={18} style={{ marginRight: '5px' }} /> Código</button>
               </a>
             </span>
           </div>
 
           <div className={styles.cardProject}>
-            <h3>Título do projeto</h3>
+            <h3>Social links</h3>
 
             <p>
-              Aplicação para busca de perfis e repositórios do GitHub. Com frontend em React, consumindo API do GitHub.
+              Página estática para exibição de links sociais, semelhante ao linktr.ee, beacons.
             </p>
 
             <article className={styles.projectsTags}>
-              <span><em>#javascript</em></span>
-              <span><em>#react</em></span>
+              <span><em>#html</em></span>
+              <span><em>#css</em></span>
               <span><em>#vercel</em></span>
             </article>
 
             <span className={styles.cardFooter}>
-              <a href="#">
+              <a href="https://github.com/JackssonAndrey/social-links" target="_blank">
                 <button type="button" className={styles.btnViewCode}><FiLink size={18} style={{ marginRight: '5px' }} /> Código</button>
               </a>
             </span>
           </div>
 
           <div className={styles.cardProject}>
-            <h3>Título do projeto</h3>
+            <h3>Busca de repositórios</h3>
 
             <p>
               Aplicação para busca de perfis e repositórios do GitHub. Com frontend em React, consumindo API do GitHub.
@@ -173,19 +187,49 @@ const Home: React.FC = () => {
             <article className={styles.projectsTags}>
               <span><em>#javascript</em></span>
               <span><em>#react</em></span>
-              <span><em>#vercel</em></span>
+              <span><em>#netlify</em></span>
+              <span><em>#css</em></span>
+              <span><em>#materialui</em></span>
+
             </article>
 
             <span className={styles.cardFooter}>
-              <a href="#">
+              <a href="https://github.com/JackssonAndrey/api-github-repos" target="_blank">
                 <button type="button" className={styles.btnViewCode}><FiLink size={18} style={{ marginRight: '5px' }} /> Código</button>
               </a>
             </span>
           </div>
+
+          <div className={styles.cardProject}>
+            <h3>toDo Dev</h3>
+
+            <p>
+              Aplicação para gerenciamento de tarefas para desenvolvedores.
+            </p>
+
+            <article className={styles.projectsTags}>
+              <span><em>#javascript</em></span>
+              <span><em>#css</em></span>
+              <span><em>#ejs</em></span>
+              <span><em>#sequelize</em></span>
+            </article>
+
+            <span className={styles.cardFooter}>
+              <a href="https://github.com/JackssonAndrey/toDo-Dev" target="_blank">
+                <button type="button" className={styles.btnViewCode}><FiLink size={18} style={{ marginRight: '5px' }} /> Código</button>
+              </a>
+            </span>
+          </div>
+
+          <span style={{ width: '100%', marginTop: '20px', display: 'flex', alignContent: 'center', justifyContent: 'center' }}>
+            <a href="https://github.com/JackssonAndrey?tab=repositories" target="_blank">
+              <button className={styles.btnViewCode}>Ver mais projetos</button>
+            </a>
+          </span>
         </article>
       </div>
 
-      <div className={styles.aboutMe}>
+      <div className={styles.aboutMe} id="aboutMe">
         <h1>Quem sou?</h1>
 
         <div className={styles.aboutMeContent}>
@@ -205,7 +249,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className={styles.techs}>
+      <div className={styles.techs} id="techs">
         <div className={styles.techsContent}>
           <article>
             <h1>Tecnologias que trabalho</h1>
@@ -273,28 +317,28 @@ const Home: React.FC = () => {
           <article>
             <ul className={styles.listSocial}>
               <li>
-                <a href="#">
-                  <FiFacebook size={24} />
+                <a href="https://www.facebook.com/andreyaraujo.dev" target="_blank">
+                  <FiFacebook size={32} />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <FiGithub size={24} />
+                <a href="https://github.com/JackssonAndrey" target="_blank">
+                  <FiGithub size={32} />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <FiInstagram size={24} />
+                <a href="https://www.instagram.com/andreyaraujo.dev/" target="_blank">
+                  <FiInstagram size={32} />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <FiLinkedin size={24} />
+                <a href="https://www.linkedin.com/in/jacksson-andrey/" target="_blank">
+                  <FiLinkedin size={32} />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <FiMail size={24} />
+                <a href="mailto:jaab.andrey@gmail.com" target="_blank">
+                  <FiMail size={32} />
                 </a>
               </li>
             </ul>
@@ -304,7 +348,7 @@ const Home: React.FC = () => {
           <p>andreyaraujo.dev</p>
         </div>
 
-        <span className={styles.returnTop}>
+        <span className={styles.returnTop} onClick={returnToTop}>
           <FiChevronUp size={24} />
         </span>
       </div>
